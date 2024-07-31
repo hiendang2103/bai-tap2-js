@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h1>Menu Căn tin</h1>
+      </div>
+      <div class="content">
+        <label>Món ăn:</label>
+        <select id="food">
+          <option value=""></option>
+          <option value="com-ga">Cơm Gà</option>
+          <option value="com-vit">Cơm Vịt</option>
+          <option value="xoi">Xôi</option>
+          <option value="banh-bao">Bánh bao</option>
+          <option value="cafe">Cafe</option>
+          <option value="coca">Coca</option>
+          <option value="nuoc-suoi">Nước suối</option></select
+        ><br />
+        <label>Giá tiền:</label>
+        <select id="price">
+          <option value=""></option>
+          <option value="10000">10.000VND</option>
+          <option value="15000">15.000VND</option>
+          <option value="20000">20.000VND</option>
+          <option value="25000">25.000VND</option>
+          <option value="30000">30.000VND</option>
+          <option value="35000">35.000VND</option>
+          <option value="40000">40.000VND</option></select
+        ><br />
+        <label>Số lượng:</label>
+        <select id="quantity">
+          <option value=""></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <br />
+        <label>Loại:</label>
+        <select id="loai">
+          <option value=""></option>
+          <option value="cafe-den">Cafe Đen</option>
+          <option value="cafe-sua">Cafe Sữa</option>
+          <option value="cafe-muoi">Cafe Muối</option>
+        </select>
+        <br />
+        <p>Mang đi hay ở lại:</p>
+        <input type="radio" />
+        <label>Uống tại quán</label>
+        <input type="radio" />
+        <label>Mang đi</label><br />
+        <label>Tống tiền:</label>
+        <input type="text" id="sum-price1" class="sum-price" /><button
+          class="btn-thanhtoan"
+          onclick="TinhTong()"
+        >
+          Tính tổng</button
+        ><br />
+        <label>Tiền khách trả:</label>
+        <input type="text" id="total-price" class="total-price" /><br />
+        <p id="result"></p>
+        <button onclick="myFunction()" class="btn-thanhtoan">Thanh toán</button>
+        <button onclick="Xoa()" class="btn-thanhtoan1">Xóa</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
